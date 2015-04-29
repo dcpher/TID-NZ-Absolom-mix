@@ -7,7 +7,7 @@
     
 	<link rel="shortcut icon" href="/favicon.png">
 	{{ "assets/css/style.css" | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   
     
 	{% block header %}
@@ -17,7 +17,7 @@
     {% include "header-scripts" %}
 
 </head>
-<body>
+<body class='{% block body_class %}{% endblock %}' id='{% block body_id %}{% endblock %}'>
   
   <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
@@ -45,11 +45,41 @@
 		Main content
 	{% endblock content %}
   
-      
-
-    {% include "footer" %}
-    {% include "footer-scripts" %}
+  {% include "footer" %}
+  {% include "footer-scripts" %}
 
 
+<script>
+      $(function() {
+        var $mobileToggle = $('.mobile-toggle');
+        var $toggleElements = $('.mobile-toggle-target');
+
+        var toggleElements = function() {
+          var $mobileToggle = $('.mobile-toggle');
+          if ($mobileToggle.hasClass('open')) {
+            $toggleElements.show();
+          } else {
+            $toggleElements.hide();
+          }
+        };
+
+        $mobileToggle.on('click', function() {
+          $(this).toggleClass('open');
+          toggleElements();
+        });
+
+        $(window).on('load resize', function() {
+          if ($mobileToggle.is(':visible')) {
+            if ($mobileToggle.hasClass('open')) {
+              $toggleElements.show();
+            } else {
+              $toggleElements.hide();
+            }
+          } else {
+            $toggleElements.show();
+          }
+        });
+      });
+</script>
 </body>
 </html>
