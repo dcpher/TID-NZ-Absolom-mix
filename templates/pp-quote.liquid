@@ -319,7 +319,6 @@
 
   </section>
 
-
   <aside class='columns small-12 medium-12 large-3' id="additional-content" data-analytics-id="details-side-bar-content">
 
     <ul class="trust-list">
@@ -330,7 +329,36 @@
     </ul>
 
   </aside>
-
+  
+  <h2>Choose your options</h2>
+  <section class="columns small-12 medium-12 large-9" role="main" style="float: left">
+    <table style="float:left;" width="100%" border="0" cellpadding="16">
+      <tbody>
+        <tr class="event-based-benefit snow-sports">
+          <td data-th="When">
+            <div class="title">Will you be skiing or doing any snow sports?</div>
+            <div class="description">
+              <label for="snowSportsOptIn" class="label-for-single-checkbox label-prominent">
+                <input class="manual-update-trigger" data-analytics-id="option-add-snow-sports" id="snowSportsOptIn" name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="checkbox" value="true"><input name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="hidden" value="false">
+                Yes I need cover for Snow Sports.
+              </label>
+              <p>
+                If you are planning to do any
+                <a href="http://service.travelinsurancedirect.com.au/customer/portal/articles/528580-cover-for-skiing-and-snowboarding" target="_blank">Skiing or snow sports</a> you need this option.
+              </p>
+              <span class="manual-update">
+                <input type="submit" value="Update" name="UpdateSnowSportsOption" class="button-tertiary" style="display: none;">
+              </span>
+            </div>
+          </td>
+          <td data-th="We pay">
+            <div class="amount">$0.00</div>
+            <div class="description">Additional premium</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </div>
 
 {% endblock %}
