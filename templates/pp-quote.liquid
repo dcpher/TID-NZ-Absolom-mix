@@ -332,20 +332,148 @@
   
   <h2>Choose your options</h2>
   <section class="columns small-12 medium-12 large-9" role="main" style="float: left">
-    <table style="float:left;" width="100%" border="0" cellpadding="16">
+    <table class="options-table" style="float:left;" width="100%" border="0" cellpadding="16">
       <tbody>
-        <tr class="event-based-benefit snow-sports">
+        <tr class="event-based-benefit">
           <td data-th="When">
-            <div class="title">Will you be skiing or doing any snow sports?</div>
+            <div class="title">$0 Policy Excess</div>
             <div class="description">
               <label for="snowSportsOptIn" class="label-for-single-checkbox label-prominent">
                 <input class="manual-update-trigger" data-analytics-id="option-add-snow-sports" id="snowSportsOptIn" name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="checkbox" value="true"><input name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="hidden" value="false">
-                Yes I need cover for Snow Sports.
+                Reduce my policy excess to $0
               </label>
+              <span class="manual-update">
+                <input type="submit" value="Update" name="UpdateSnowSportsOption" class="button-tertiary" style="display: none;">
+              </span>
+            </div>
+          </td>
+          <td data-th="We pay">
+            <div class="amount">$0.00</div>
+            <div class="description">Additional premium</div>
+          </td>
+        </tr>
+        <tr class="event-based-benefit">
+          <td data-th="When">
+            <div class="title">Valuable items you're taking with you</div>
+            <div class="description">
               <p>
-                If you are planning to do any
-                <a href="http://service.travelinsurancedirect.com.au/customer/portal/articles/528580-cover-for-skiing-and-snowboarding" target="_blank">Skiing or snow sports</a> you need this option.
+                We cover theft, accidental loss and damage to your luggage and personal effects up to $700 per item. If you claim, we calculate <a href="http://service.travelinsurancedirect.co.nz/customer/portal/articles/866175-depreciation">depreciation for age and wear</a> unless you add them below.
               </p>
+              <p>
+                Any item up to $4,000 may be added but if you claim you will need to provide receipts and the policy excess still applied unless you remove it.
+              </p>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      Item Name
+                    </th>
+                    <th>
+                      Serial Number
+                    </th>
+                    <th>
+                      Item Value ($)
+                    </th>
+                    <th>
+                      Premium
+                    </th>
+                    <th>
+                      &nbsp;
+                    </th>
+                    <th>
+                      &nbsp;
+                    </th>
+                  </tr>
+                  <tr class="manual-update-container">
+                    <td class="item-name">
+                      <input id="QuoteDto_PolicyOptions_2__PolicySpecifiedItemOptionDto_SpecifiedItems_0__Name" name="QuoteDto.PolicyOptions[2].PolicySpecifiedItemOptionDto.SpecifiedItems[0].Name" type="text" value="">
+                    </td>
+                    <td class="item-serial">
+                      <input id="QuoteDto_PolicyOptions_2__PolicySpecifiedItemOptionDto_SpecifiedItems_0__SerialNumber" name="QuoteDto.PolicyOptions[2].PolicySpecifiedItemOptionDto.SpecifiedItems[0].SerialNumber" placeholder="Optional" type="text" value="">
+                    </td>
+                    <td class="item-value">
+                      <input class="manual-update-trigger" id="QuoteDto_PolicyOptions_2__PolicySpecifiedItemOptionDto_SpecifiedItems_0__ItemValueAsString" name="QuoteDto.PolicyOptions[2].PolicySpecifiedItemOptionDto.SpecifiedItems[0].ItemValueAsString" type="text" value=""> 
+                    </td>
+                    <td class="item-premium">
+                        -
+                    </td>
+                    <td>
+                      <input type="submit" value="Add Item" class="add" name="UpdateSpecifiedItemOption">
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+          <td data-th="We pay">
+            <div class="amount">$0.00</div>
+            <div class="description">Additional premium</div>
+          </td>
+        </tr>
+        <tr class="event-based-benefit">
+          <td data-th="When">
+            <div class="title">Car Rental Excess</div>
+            <div class="description">
+              <p>
+                If you hire a car on your trip and have an accident our insurance pays up to $4,000 of any excess you may be liable for from the hire company. You can choose to increase this to a maximum of $6,000.
+              </p>
+              <table class="rental-car-excess">
+                <tbody><tr>
+                  <th>
+                    Maximum
+                  </th>
+                </tr>
+                <tr class="manual-update-container">
+                  <td class="vehicle-excess">
+                    NZD 
+                    <select class="manual-update-trigger" id="QuoteDto_PolicyOptions_1__PolicyBasicOptionDto_BasicOptionNetPriceId" name="QuoteDto.PolicyOptions[1].PolicyBasicOptionDto.BasicOptionNetPriceId"><option selected="selected" value="17">$4,000</option>
+                      <option value="18">$4,500</option>
+                      <option value="19">$5,000</option>
+                      <option value="20">$5,500</option>
+                      <option value="21">$6,000</option>
+                      </select>
+                  </td>
+                </tr>
+              </tbody></table>
+              <span class="manual-update" style="display: none;">
+                      <input type="submit" value="Update" name="UpdateRentalCarExcessOpton">
+                    </span>
+            </div>
+          </td>
+          <td data-th="We pay">
+            <div class="amount">$0.00</div>
+            <div class="description">Additional premium</div>
+          </td>
+        </tr>
+        <tr class="event-based-benefit">
+          <td data-th="When">
+            <div class="title">Small things can make a big difference</div>
+            <div class="description">
+              <p>TID believes that travel changes peoples lives, so help us create opportunities for people in the places you travel. We guarantee that 100% of the funds raised will go to the project of your choice.</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                    <label for="snowSportsOptIn" class="label-for-single-checkbox label-prominent">
+                      <input class="manual-update-trigger" data-analytics-id="option-add-snow-sports" id="snowSportsOptIn" name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="checkbox" value="true"><input name="QuoteDto.PolicyOptions[1].PolicyBasicPercentageOptionDto.IsSingleValueSelected" type="hidden" value="false">
+                      <span class="give-to">Give $2 to:</span>
+                      <span class="project-name">Geta Eye Hospital, regional Nepal</span>
+                    </label>
+                    <p>
+                      <a href="http://www.footprintsnetwork.org//default.aspx?c=10&amp;x1=105" target="blank" class="find-out-more-link">Find out more</a> or
+                      <a class="button-like choose-another-project-link" href="/Quote/OpenDonationProjects?SessionTokenQuoteModel=204f53e5-edff-4cf7-aff1-6fe1f818aea0">Choose another project</a>
+                      <span class="manual-update" style="display: none;">( <input type="submit" value="Update" name="UpdateDonation"> )</span>
+                    </p>
+                    </td>
+                    <td>
+                      <img class="logo" alt="The Fred Hollows Foundation" src="https://www.footprintsnetwork.org//uploadimages/small_fhf.gif">
+                      <img class="preview" alt="Geta Eye Hospital, regional Nepal" src="https://www.footprintsnetwork.org//uploadimages/105_NepalEyeHealth_small.jpg">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="manual-update">
                 <input type="submit" value="Update" name="UpdateSnowSportsOption" class="button-tertiary" style="display: none;">
               </span>

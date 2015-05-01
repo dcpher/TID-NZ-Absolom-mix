@@ -8477,6 +8477,29 @@ body.quote .trust-list {
     content: "A"; }
   body.quote .trust-list li.secure:after {
     content: "G"; }
+body.quote .options-table .title {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 100%;
+  margin-bottom: 0.5rem; }
+body.quote .options-table .give-to {
+  display: inline;
+  float: left;
+  margin-bottom: 0.5em;
+  clear: right;
+  font-family: inherit; }
+body.quote .options-table .project-name {
+  display: inline;
+  float: left;
+  width: 380px; }
+body.quote .options-table td {
+  width: 50%; }
+body.quote .options-table label {
+  font-size: 1rem; }
+body.quote .options-table p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem; }
 
 body.options .row {
   margin-top: 1.25rem; }
