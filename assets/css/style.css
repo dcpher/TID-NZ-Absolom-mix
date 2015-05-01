@@ -8941,9 +8941,23 @@ body.details fieldset {
     float: left; } }
 body.details .dob select {
   width: 30%;
-  margin-right: 5%; }
+  margin-right: 3%; }
 body.details .dob select:last-child {
   margin-right: 0; }
+body.details .cta-wrapper {
+  width: 100%; }
+body.details .membership {
+  padding-right: 2rem;
+  float: left;
+  height: 71px; }
+  @media only screen and (max-width: 40em) {
+    body.details .membership {
+      width: 100%; } }
+  body.details .membership span {
+    position: relative;
+    top: 12px; }
+  body.details .membership:last-child {
+    padding-right: 0; }
 body.details .sign-in-or-forgot-password .password input[type='submit'] {
   background: none;
   outline: none;

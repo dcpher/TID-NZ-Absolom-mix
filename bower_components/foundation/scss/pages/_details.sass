@@ -73,9 +73,22 @@ body.details
   .dob
     select
       width: 30%
-      margin-right: 5%
+      margin-right: 3%
     select:last-child
       margin-right: 0
+  .cta-wrapper
+    width: 100%
+  .membership
+    padding-right: 2rem
+    float: left
+    height: 71px
+    @media #{$small-only}
+      width: 100%
+    span
+      position: relative
+      top: 12px
+    &:last-child
+      padding-right: 0
 
   // Top inline sign in panel
   .sign-in-or-forgot-password
